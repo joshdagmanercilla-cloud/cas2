@@ -1,0 +1,13 @@
+{
+  "name": "quiet-barangay",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Anonymous muffler incident reporting for Cauayan City, Isabela",
+  "scripts": {
+    "start": "node server.js",
+    "seed:official": "node scripts/seed-official.js",
+    "backup": "node scripts/backup.js",
+    "test": "node --test"
+  },
+  "engines": { "node": ">=24" }
+}
