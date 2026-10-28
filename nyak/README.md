@@ -17,6 +17,7 @@ node server.js
 Open <http://localhost:3000>. The first run creates the database, applies migrations, loads the 65 official Cauayan City barangay names, and creates the Administrator account with a scrypt password hash. The bootstrap account is created only when no official account exists. Changing the bootstrap environment value will not replace an existing password; use the privileged official account API for account maintenance.
 
 Create additional officials while signed in as Administrator, or use the provisioning script after the server has initialized the database:
+Create a custom admin account from **Officials Login → Access management** while signed in as an Administrator: enter its name, username, and password, select **Administrator**, then create the account. The initial Administrator uses the custom `QB_ADMIN_USER` and `QB_ADMIN_PASSWORD` values set before first startup. Additional officials can also be provisioned with the script after the server has initialized the database:
 
 ```powershell
 $env:QB_SEED_NAME = 'Barangay Reviewer'
